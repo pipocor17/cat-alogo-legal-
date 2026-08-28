@@ -1,0 +1,260 @@
+/* Variables base y Reset */
+:root {
+    --bg-dark: #161c24;
+    --gold: hsl(38, 63%, 66%);
+    --gold-muted: rgba(223, 183, 115, 0.4);
+    --text-white: #f8fafc;
+    --text-gray: #94a3b8;
+    --card-bg: rgba(255, 255, 255, 0.03);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0d1117; /* Fondo negro alrededor del celular en PC */
+    font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* El simulador de celular */
+.app-container {
+    width: 100%;
+    max-width: 414px;
+    min-height: 100vh;
+    background-color: var(--bg-dark);
+    box-shadow: 0 0 40px rgba(0,0,0,0.5);
+    position: relative;
+    overflow-x: hidden;
+    color: var(--text-white);
+}
+
+/* Cabecera elegante */
+.app-header {
+    padding: 24px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: linear-gradient(180deg, var(--bg-dark) 70%, transparent);
+}
+
+.back-btn, .header-icon {
+    background: none;
+    border: none;
+    color: var(--gold);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: var(--gold);
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+}
+
+.app-header h1 span {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* Contenido */
+.app-content {
+    padding: 10px 24px 40px 24px;
+}
+
+/* Tarjeta Principal Glassmorphism */
+.intro-card {
+    background: linear-gradient(145deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+    border: 1px solid var(--gold-muted);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 40px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 12px 30px rgba(223, 183, 115, 0.08); /* Resplandor dorado suave */
+}
+
+.intro-card h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-white);
+}
+
+.intro-card p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--text-gray);
+    font-weight: 300;
+}
+
+/* Iconos Dorados */
+.gold-icon {
+    color: var(--gold);
+    flex-shrink: 0;
+}
+
+/* Títulos de sección */
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.mt-6 {
+    margin-top: 48px;
+}
+
+/* Acordeones en lista minimalista */
+.accordion-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion {
+    width: 100%;
+}
+
+.accordion-header {
+    width: 100%;
+    text-align: left;
+    padding: 20px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Línea divisoria muy fina */
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--text-white);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.chevron {
+    color: var(--text-gray);
+    transition: transform 0.3s ease;
+}
+
+.accordion-header.active .chevron {
+    transform: rotate(180deg);
+    color: var(--gold);
+}
+
+/* Contenido interno del acordeón */
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    /* --- SOLUCIÓN FLEXBOX --- */
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion-content ul {
+    list-style: none;
+    padding: 16px 16px 24px 34px;
+}
+
+.accordion-content li {
+    font-size: 13px;
+    color: var(--text-gray);
+    margin-bottom: 14px;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+.accordion-content li:last-child {
+    margin-bottom: 0;
+}
+
+.accordion-content strong {
+    color: var(--text-white);
+    font-weight: 600;
+}
+
+/* Grid de Rubros (2 columnas) */
+.rubros-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.rubro-card {
+    background: var(--card-bg);
+    border: 1px solid rgba(255,255,255,0.05);
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--text-white);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-note {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 13px;
+    color: var(--gold);
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.5px;
+}
+
+/* Marcador para futuro video (Estilo Elegant V2) */
+.video-placeholder-elegant {
+    margin: 10px 16px 20px 34px; /* Alineado perfectamente con la viñeta del texto */
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px dashed var(--gold-muted);
+    height: 110px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: var(--gold-muted);
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+/* Pequeño efecto al pasar el mouse por encima de la caja del video */
+.video-placeholder-elegant:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--gold);
+    color: var(--gold);
+    cursor: pointer;
+}

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Manual de Uso - Cat-Alogo Elegant</title>
+    <!-- Fuentes premium de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Contenedor que simula la pantalla del celular -->
+    <div class="app-container">
+
+        <!-- Cabecera de la App -->
+        <header class="app-header">
+            <button class="back-btn" onclick="history.back()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+            </button>
+            <h1>Manual de Uso: <br><span>Cat-Alogo</span></h1>
+            <div class="header-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+            </div>
+        </header>
+
+        <!-- Contenido desplazable -->
+        <main class="app-content">
+
+            <!-- Tarjeta de Bienvenida con efecto Glassmorphism -->
+            <div class="intro-card">
+                <h2>
+                    <svg class="gold-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    Bóveda Local Inteligente
+                </h2>
+                <p>Cat-Alogo funciona como ERP y POS móvil. Todos tus datos quedan seguros en tu teléfono, funcionando a máxima velocidad sin necesidad de internet.</p>
+            </div>
+
+            <h3 class="section-title">MÓDULOS DE LA APLICACIÓN</h3>
+
+            <div class="accordion-group">
+                <!-- Acordeón 1: Inicio -->
+                <div class="accordion">
+                    <button class="accordion-header">
+                        <div class="header-left">
+                            <svg class="gold-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                            <span>A. Módulo de Inicio</span>
+                        </div>
+                        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="accordion-content">
+                        <ul>
+                            <li><strong>1. Barra Superior:</strong> Accede a tu perfil y configuraciones de usuario de forma rápida.</li>
+                            <li><strong>2. Contadores de Productos:</strong> Visualiza al instante cuántos productos tienes cargados en total y cuántos están visibles en tu catálogo.</li>
+                            <li><strong>3. Abrir / Cerrar Turno:</strong> Abre la caja registradora indicando el dinero en efectivo (fondo inicial) con el que comienzas tu jornada.</li>
+                            <li><strong>4. Terminal de Ventas / Pedidos:</strong> Selecciona productos, ajusta cantidades, registra la venta con hasta 2 medios de pago y genera un ticket en PDF.</li>
+                            <li><strong>5. Venta Visual (Catálogo):</strong> Realiza una venta de forma visual selecionando los productos desde el catálogo de productos.</li>
+                            <li><strong>6. Hub de Finanzas:</strong> Accede al panel analítico con la información de tus ventas, gastos operativos y pagos a proveedores.</li>
+                            <li><strong>7. Registrar Gastos:</strong> Asienta de forma inmediata las salidas de dinero o gastos realizados en el día.</li>
+                            <li><strong>8. Actualización Masiva:</strong> Calcula márgenes de ganancia y actualiza el costo de tus productos por lote.</li>
+                            <li><strong>9. Mis Catálogos:</strong> Guarda tus selecciones de productos y diseños favoritos para volver a generarlos sin empezar desde cero.</li>
+                            <li><strong>10. Tasa Dólar:</strong> Registra la cotización actual para que los precios de tus productos en moneda extranjera se actualicen automáticamente.</li>
+                            <li><strong>11. Reporte de Stock Rápido:</strong> Modifica umbrales de alerta y actualiza las cantidades de tu inventario ágilmente.</li>
+                            <li><strong>12. Control de Stock Completo:</strong> Accede a la suite logística para administrar proveedores, reabastecer productos y generar órdenes de compra.</li>
+                            <li><strong>13. Escanear Producto (Informativo):</strong> Abre la cámara para leer el código de barras de un artículo y ver su ficha técnica al instante.</li>
+                            <li><strong>14. Escáner de Productos (Ventas):</strong> Toma el código de barras de un producto físico y súmalo directamente al carrito del cliente.</li>
+                            <li><strong>15. Selección de Plantilla:</strong> Selecciona y previsualiza el diseño que utilizarás para crear el PDF de tus productos.</li>
+                        </ul>
+                            
+                            <!-- Caja para el futuro video demostrativo -->
+                            <div class="video-placeholder-elegant">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                                Aquí irá tu video demostrativo
+                            </div>
+                        </div>
+                </div>
+
+                <!-- Acordeón 2: Inventario -->
+                <div class="accordion">
+                    <button class="accordion-header">
+                        <div class="header-left">
+                            <svg class="gold-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                            <span>B. Módulo de Inventario</span>
+                        </div>
+                        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="accordion-content">
+                        <ul>
+                            <li><strong>1. Crea Productos (+):</strong> Completa los datos de tu artículo: nombres, precios, captura la foto (cámara, galería o web), escanea el código de barras y define tu stock inicial.</li>
+                            <li><strong>2. Categorías y Filtros:</strong> Filtra tu inventario al instante ("Todos", "En catálogo", "Con oferta") y personaliza la vista de estas categorías eligiendo entre diseño de Chips, Botones o Select.</li>
+                            <li><strong>3. Vista de Producto:</strong> Tarjetas inteligentes que te muestran la imagen y métricas del artículo, con accesos directos para mostrar/ocultar del catálogo público, editar o eliminar definitivamente.</li>
+                            <li><strong>4. Herramientas Financieras:</strong> Cambia los precios masivamente por porcentaje o monto fijo (aumentos o descuentos). Aplícalo a un producto o categoría entera e incluye reglas de redondeo automático.</li>
+                            <li><strong>5. Ajustes para Storys:</strong> Modifica y descarga imágenes verticales promocionales para Instagram. Personaliza el texto comercial, la imagen del producto, degradados y colores de fondo.</li>
+                            <li><strong>6. Borrador con IA:</strong> Elimina el fondo de las fotografías de tus productos automáticamente con un solo clic, dándoles un acabado de estudio.</li>
+                            <li><strong>7. Monitor de Plan:</strong> Visualiza la capacidad de tu inventario (productos cargados vs. límite permitido) y accede rápidamente a la plataforma de pagos para mejorar a un plan mensual o anual.</li>
+                        </ul>
+                        
+                        <!-- Caja para el futuro video demostrativo -->
+                        <div class="video-placeholder-elegant">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                            Aquí irá tu video demostrativo
+                        </div>
+                    </div>
+                </div>                
+
+                <!-- Acordeón 3: Diseño -->
+                <div class="accordion">
+                    <button class="accordion-header">
+                        <div class="header-left">
+                            <svg class="gold-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="5.5" r="2.5"/><circle cx="19.5" cy="10.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/><path d="M9 19c-2.8 0-5-2.2-5-5s2.2-5 5-5c1 0 1.8.3 2.5.7l5.2-6.2c.4-.5 1.1-.6 1.6-.2l1.6 1.6c.4.4.5 1.1.2 1.6l-6.2 5.2c.4.7.7 1.5.7 2.5 0 2.8-2.2 5-5 5z"/></svg>
+                            <span>C. Módulo de Diseño de Catálogos</span>
+                        </div>
+                        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="accordion-content">
+                        <ul>
+                            <li><strong>1. Vista Previa en Tiempo Real (VP +):</strong> Monitor dividido que reproduce exactamente cómo quedará el documento final al exportarse[cite: 7]. El botón VP + expande la previsualización a pantalla completa.</li>
+                            <li><strong>2. Estructura y Layout:</strong> Define orientación de hoja, número de columnas de productos por página y márgenes.</li>
+                            <li><strong>3. Estilo y Color de Textos:</strong> Selección de tipografías (Google Fonts) y configuración cromática individual para títulos, descripciones, precios regulares y ofertas.</li>
+                            <li><strong>4. Alineación y Tamaño de Imagen:</strong> Controles deslizantes para ajustar el encuadre, la proporción y el tamaño máximo de las fotos.</li>
+                            <li><strong>5. Tamaño y Espaciado de Textos:</strong> Sliders de ajuste milimétrico para balancear la densidad de información y darles libertad de edición a tus descripciones.</li>
+                            <li><strong>6. Carátula, Cabecera y Cierre:</strong> Activación de logotipo superior y opciones para habilitar una página de portada comercial y una página de cierre con redes sociales, mapa y datos de contacto.</li>
+                            <li><strong>7. Organizar y Fondo de Producto:</strong> Reordenamiento de capas dentro de la tarjeta de producto (ej. ubicar el precio por encima de la descripción) y personalización de sombras, bordes redondeados y fondos.</li>
+                            <li><strong>8. Guardar como Plantilla:</strong> Almacena la configuración visual actual como una plantilla personalizada accesible desde el menú de Inicio.</li></ul>
+                            
+                            <!-- Caja para el futuro video demostrativo -->
+                            <div class="video-placeholder-elegant">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                                Aquí irá tu video demostrativo
+                            </div>
+                        </div>
+                </div>
+
+                <!-- Acordeón 4: Exportar -->
+                <div class="accordion">
+                    <button class="accordion-header">
+                        <div class="header-left">
+                            <svg class="gold-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                            <span>D. Módulo de Exportación de Catálogos</span>
+                        </div>
+                        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="accordion-content">
+                        <ul>
+                            <li><strong>1. Formatos de Salida (PDF):</strong> Elige entre PDF de Alta Calidad con modo de color CMYK (ideal para imprenta o gráfica), o PDF Optimizado con compresión inteligente para enviarlo ultra rápido por WhatsApp o email.</li>
+                            <li><strong>2. Exportar Imágenes (PNG):</strong> Genera archivos de imagen individuales por cada página de tu catálogo, perfectos para subir como fotos a redes sociales o compartirlos en chats.</li>
+                            <li><strong>3. Páginas a Incluir:</strong> Utiliza los interruptores independientes para habilitar o deshabilitar la aparición de tu portada (carátula) y tu hoja de cierre (datos de contacto) en el archivo final.</li>
+                            <li><strong>4. Resumen de Exportación:</strong> Panel informativo que calcula y te muestra en vivo el total de páginas generadas, el perfil de color y el peso estimado en megabytes antes de realizar la descarga.</li>
+                            <li><strong>5. Enviar Directamente:</strong> Compila tu documento y abre automáticamente el menú nativo de tu teléfono para compartirlo en segundos por WhatsApp, correo, o guardarlo en tus archivos.</li>
+                        </ul>
+                        <!-- Caja para el futuro video demostrativo -->
+                        <div class="video-placeholder-elegant">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                            Aquí irá tu video demostrativo
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Acordeón 5: Ajustes -->
+                <div class="accordion">
+                    <button class="accordion-header">
+                        <div class="header-left">
+                            <svg class="gold-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15H4a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 5.6 9.18l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 10 5.4V5a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 11H20a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-.51 0z"/></svg>
+                            <span>E. Módulo de Ajustes</span>
+                        </div>
+                            <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="accordion-content">
+                        <ul>
+                            <li><strong>1. Idioma de la app:</strong> Alterna la interfaz de la aplicación entre Español e Inglés según su preferencia.</li>
+                            <li><strong>2. Métodos de pago habilitados:</strong> Seleccione de una lista las alternativas de pago que aceptará y ofrecerá a sus clientes.</li>
+                            <li><strong>3. Recargos y descuentos:</strong> Configure reglas automáticas de precios. Agregue un porcentaje de recargo o de descuento que se aplicará sobre el total dependiendo del medio de pago que elija el cliente.</li>
+                            <li><strong>4. Mensaje a proveedores:</strong> Edite y personalice la plantilla base del mensaje de abastecimiento. Este es el texto que se generará automáticamente en el módulo de Stock al realizar un nuevo pedido.</li>
+                            <li><strong>5. Importación masiva:</strong> Optimice su tiempo de carga. El sistema le provee un archivo base para que liste todos sus productos de una vez y los importe masivamente a la aplicación.</li>
+                            <li><strong>6. Suscripción y plan:</strong> Visualice el estado de su plan activo, características habilitadas y la próxima fecha de expiración o renovación.</li>
+                            <li><strong>7. Perfil del negocio:</strong> Agregue y edite la información pública de su comercio. Estos datos serán visibles para sus clientes directamente en el catálogo.</li>
+                            <li><strong>8. Perfil de usuario:</strong> Administre los datos personales y credenciales del titular o administrador de la cuenta.</li>
+                            <li><strong>9. Configuración de moneda:</strong> Personalice el formato visual de sus precios, definiendo si desea mostrar los montos exactos con centavos o redondeados (ej. $123,45 o $123).</li>
+                            <li><strong>10. Recomendaciones:</strong> Sección con sugerencias y buenas prácticas operativas, como la creación de respaldos periódicos.</li>
+                            <li><strong>11. Borrador de fondos con IA:</strong> Herramienta de inteligencia artificial que recorta y elimina el fondo original de las imágenes de sus productos, logrando un catálogo con una presentación mucho más limpia y profesional.</li>
+                            <li><strong>12. Clave API:</strong> Panel con los pasos a seguir para obtener y vincular la llave de acceso (API Key) necesaria para activar la función del borrador de fondos.</li>
+                            <li><strong>13. Copias de seguridad:</strong> Proteja su información creando respaldos manuales. Puede exportar los datos directamente a la memoria de su celular (Copia 1) o sincronizarlos de forma segura en la nube mediante Google Drive (Copia 2).</li>
+                            <li><strong>14. Zona de peligro (Eliminar cuenta):</strong> Acción irreversible para borrar su cuenta y eliminar todos los datos asociados al sistema de forma definitiva.</li>
+                            
+                            <!-- Caja para el futuro video demostrativo -->
+                            <div class="video-placeholder-elegant">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                                Aquí irá tu video demostrativo
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Acordeón 6: Logística -->
+                <div class="accordion">
+                    <button class="accordion-header">
+                        <div class="header-left">
+                            <svg class="gold-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                            <span>F. Módulo de Stock y Proveedores</span>
+                        </div>
+                        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="accordion-content">
+                        <ul>
+                            <li><strong>1. Registrar Proveedores:</strong> Sección dedicada a la administración de sus contactos comerciales. Aquí podrá registrar y crear la lista completa de sus proveedores, el cual es el primer paso fundamental antes de realizar pedidos.</li>
+                            <li><strong>2. Asignar Productos:</strong> Una vez registrado un proveedor, en este apartado podrá seleccionar y vincular los productos específicos que dicho proveedor promociona. Esta configuración es esencial para automatizar la posterior creación de sus pedidos.</li>
+                            <li><strong>3. Lista de Productos:</strong> Visualice de forma organizada su catálogo. Esta sección le muestra la lista de categorías y productos creados, centralizando en tiempo real la información detallada del stock disponible para cada ítem.</li>
+                            <li><strong>4. Aviso de Stock Bajo (Umbral Crítico):</strong> El sistema cuenta con un indicador de alerta que le mostrará el número exacto de productos que han alcanzado un stock bajo o crítico. Al presionar el botón, la lista se filtrará automáticamente permitiéndole visualizar de inmediato qué productos requieren reposición.</li>
+                            <li><strong>5. Mensaje de Pedido:</strong> Agilice sus compras de reabastecimiento. Esta función le permite crear mensajes de pedidos estructurados de forma automática; listos para copiar y pegar en su aplicación de mensajería (como WhatsApp) y enviarlos directamente a su proveedor.</li>
+                            <li><strong>6. Recepción de Pedido:</strong> Lleve el seguimiento de las solicitudes enviadas. Al recibir la mercadería por parte del proveedor, esta sección le permite registrar el pago y confirmar la entrega del pedido, manteniendo su inventario siempre actualizado.</li>
+                        </ul>
+                        
+                        <!-- Caja para el futuro video demostrativo -->
+                        <div class="video-placeholder-elegant">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                            Aquí irá tu video demostrativo
+                        </div>
+                    </div>
+                </div>                
+
+                <!-- Acordeón 7: Finanzas -->
+                <div class="accordion">
+                    <button class="accordion-header" style="border-bottom: none;"> <!-- El último no lleva borde en el diseño -->
+                        <div class="header-left">
+                            <svg class="gold-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                            <span>G. Módulo de Hub Financiero (7 Niveles)</span>
+                        </div>
+                        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="accordion-content">
+                        <ul>
+                            <li><strong>1. Abrir / Cerrar el Turno:</strong> Inicia y finaliza tu jornada laboral realizando el arqueo de tu caja registradora de forma segura.</li>
+                            <li><strong>2. Registrar Ingresos y Gastos:</strong> Asienta ventas manuales combinando diferentes medios de pago, y registra salidas de dinero (luz, alquiler, insumos) creando tus propias categorías de gastos operativos.</li>
+                            <li><strong>3. Filtro Diario:</strong> Navega por un calendario integrado para visualizar, inspeccionar y administrar de forma rápida las transacciones exactas de cualquier día en específico.</li>
+                            <li><strong>4. Resumen Financiero (PDF):</strong> La estación de reportes compila toda tu actividad y genera documentos contables consolidados (diarios, semanales, mensuales o anuales) listos para descargar o imprimir.</li>
+                            <li><strong>5. Niveles 1, 2, 3 y 4 (Operación y Caja):</strong> Analiza tus ventas totales, el ticket promedio, el flujo de caja (ingresos vs. egresos), la distribución porcentual de tus gastos y administra las cuentas por pagar a tus proveedores.</li>
+                            <li><strong>6. Niveles 5, 6 y 7 (Rentabilidad y Proyección):</strong> Accede a métricas gerenciales avanzadas como tu ganancia neta real, el desglose de dinero por cada medio de pago, proyecciones de cierre de mes, cálculo de EBITDA y el estado de resultados (P&L).</li>
+                        </ul>
+                        
+                        <!-- Caja para el futuro video demostrativo -->
+                        <div class="video-placeholder-elegant">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                            Aquí irá tu video demostrativo
+                        </div>
+                    </div>
+                </div>
+            </div>                
+            
+            <h3 class="section-title mt-6">PARA QUIÉN ES CAT-ALOGO?</h3>
+            <div class="rubros-grid">
+                
+                <!-- 1. Ropa y Calzado -->
+                <div class="rubro-card">
+                    <svg class="gold-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.38 3.46L16 2a8 8 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg>
+                    Ropa y Calzado
+                </div>
+                
+                <!-- 2. Almacenes y Kioscos -->
+                <div class="rubro-card">
+                    <svg class="gold-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><rect x="9" y="9" width="6" height="6"/></svg>
+                    Almacenes y Kioscos
+                </div>
+                
+                <!-- 3. Ferreterías -->
+                <div class="rubro-card">
+                    <svg class="gold-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                    Ferreterías
+                </div>
+                
+                <!-- 4. Mayoristas -->
+                <div class="rubro-card">
+                    <svg class="gold-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                    Mayoristas
+                </div>
+                
+                <!-- 5. Cosmética -->
+                <div class="rubro-card">
+                    <svg class="gold-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 11V7a5 5 0 0 1 10 0v4"/><circle cx="12" cy="15" r="1"/></svg>
+                    Cosmética
+                </div>
+
+                <!-- 6. Repuestos y Accesorios -->
+                <div class="rubro-card">
+                    <svg class="gold-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                    Repuestos y Acc.
+                </div>
+
+                <!-- 7. Dietéticas -->
+                <div class="rubro-card">
+                    <svg class="gold-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+                    Dietéticas
+                </div>
+
+                <!-- 8. Emprendedores -->
+                <div class="rubro-card">
+                    <svg class="gold-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                    Emprendedores
+                </div>
+            </div>
+
+            <div class="footer-note">
+                Cat-Alogo v1.0 - Guía Oficial de Uso - 2026
+            </div>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
