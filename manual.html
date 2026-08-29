@@ -74,6 +74,11 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
                                 Aquí irá tu video demostrativo
                             </div>
+
+                            <!-- Imagen: Como Vender -->
+                            <div class="accordion-image-Venta">
+                                <img src="img/Mecanca de venta.png" alt="Imagen de ejemplo del módulo de inicio" class="example-image">
+                            </div>
                         </div>
                 </div>
 
@@ -307,5 +312,16 @@
     </div>
     
     <script src="script.js"></script>
+
+    <script>
+    const imagenVenta = document.querySelector('.example-image');
+    
+    // Ejecuta la función cada vez que se hace clic o se toca la imagen
+    imagenVenta.addEventListener('click', function() {
+        // Añade o quita la clase que activa el modo pantalla completa
+        this.classList.toggle('pantalla-completa');
+    });
+</script>
+
 </body>
 </html>
