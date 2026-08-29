@@ -259,30 +259,45 @@ body {
     cursor: pointer;
 }
 
-/* Estado inicial: Imagen pequeña adaptada a los bordes */
+/* --- ESTADO NORMAL (Imagen pequeña en la página) --- */
 .accordion-image-Venta {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Centra la imagen */
 }
 
 .example-image {
-    max-width: 100%; /* Evita que la imagen desborde el contenedor[cite: 1] */
-    height: auto; /* Mantiene la relación de aspecto original[cite: 1] */
-    object-fit: contain; /* Asegura que la imagen se vea entera[cite: 1] */
-    cursor: pointer; /* Muestra el cursor de mano interactiva al pasar el mouse[cite: 3] */
-    transition: all 0.3s ease-in-out; /* Suaviza la transición hacia el zoom */
+    max-width: 100%; /* La imagen se adapta como máximo al 100% de su contenedor[cite: 1] */
+    height: auto; /* Mantiene su proporción[cite: 1] */
+    cursor: pointer;
 }
 
-/* Estado ampliado (Lightbox): Ocupa toda la pantalla del dispositivo */
-.example-image.pantalla-completa {
-    position: fixed; /* Fija la imagen en la pantalla[cite: 3] */
+/* --- ESTADO ZOOM (Contenedor pantalla completa) --- */
+.lightbox-pantalla {
+    position: fixed; /* Lo fijamos a la ventana del dispositivo[cite: 1] */
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.85); /* Aplica un fondo oscuro semitransparente[cite: 3] */
-    z-index: 9999; /* Asegura que la imagen quede por encima del resto del contenido */
-    padding: 5%; /* Deja un margen lateral y superior para que no toque los bordes del dispositivo */
-    box-sizing: border-box; /* Evita que el padding sume tamaño extra y desborde la pantalla */
+    width: 100vw; /* Ocupa todo el ancho de la pantalla[cite: 1] */
+    height: 100vh; /* Ocupa todo el alto de la pantalla[cite: 1] */
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 9999;
+    
+    /* Esta propiedad es la magia: permite hacer scroll (deslizar con el celular) 
+       si la imagen de adentro es más grande que la pantalla[cite: 1] */
+    overflow: auto; 
+    
+    display: none; /* Oculto por defecto */
+}
+
+/* Activa el lightbox[cite: 5] */
+.lightbox-pantalla.activo {
+    display: block; 
+}
+
+/* Imagen dentro del zoom */
+.lightbox-image {
+    max-width: none; /* Evitamos que CSS la reduzca al ancho de la pantalla[cite: 1] */
+    display: block;
+    margin: auto; /* La centra por defecto si su 50% resulta ser menor que la pantalla[cite: 1] */
+    cursor: pointer;
 }

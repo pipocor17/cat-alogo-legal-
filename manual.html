@@ -314,12 +314,44 @@
     <script src="script.js"></script>
 
     <script>
-    const imagenVenta = document.querySelector('.example-image');
-    
-    // Ejecuta la función cada vez que se hace clic o se toca la imagen
-    imagenVenta.addEventListener('click', function() {
-        // Añade o quita la clase que activa el modo pantalla completa
-        this.classList.toggle('pantalla-completa');
+    // Esperamos a que todo el contenido cargue
+    document.addEventListener('DOMContentLoaded', () => {
+        // Seleccionamos la imagen original usando querySelector
+        const imagenVenta = document.querySelector('.example-image');
+        
+        // Creamos el contenedor oscuro que ocupará toda la pantalla dinámicamente[cite: 6]
+        const lightbox = document.createElement('div');
+        lightbox.classList.add('lightbox-pantalla');
+        
+        // Creamos la etiqueta de imagen que irá dentro del lightbox[cite: 6]
+        const imgZoom = document.createElement('img');
+        imgZoom.classList.add('lightbox-image');
+        
+        // Insertamos la imagen en el lightbox y el lightbox al body[cite: 6]
+        lightbox.appendChild(imgZoom);
+        document.body.appendChild(lightbox);
+
+        // 1. EVENTO: Al tocar la imagen pequeña (para abrir el zoom)[cite: 2]
+        imagenVenta.addEventListener('click', function() {
+            // Le pasamos la ruta de tu imagen original (Captura de pantalla 2026-08-28 211510.png)
+            imgZoom.src = this.src;
+            
+            // Calculamos el 50% de su tamaño/resolución original real
+            const tamañoOriginal = this.naturalWidth;
+            const tamañoDeseado = tamañoOriginal * 0.5;
+            
+            // Le asignamos ese 50% exacto a la imagen ampliada
+            imgZoom.style.width = tamañoDeseado + 'px';
+            
+            // Mostramos el lightbox agregando la clase "activo"[cite: 5]
+            lightbox.classList.add('activo');
+        });
+
+        // 2. EVENTO: Al tocar la imagen ampliada (para cerrarla)[cite: 2]
+        imgZoom.addEventListener('click', function() {
+            // Oculta el lightbox quitando la clase[cite: 5]
+            lightbox.classList.remove('activo'); 
+        });
     });
 </script>
 
