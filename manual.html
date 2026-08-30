@@ -112,6 +112,23 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
                             Aquí irá tu video demostrativo
                         </div>
+
+                        <!-- Imagen: Inventario -->
+                        <span>Imagen de la página Inventario:</span>
+                        <br>
+                        <div class="accordion-image-Venta">
+                            <img src="img/A1_Inventario.png" alt="Imagen de ejemplo del módulo de inicio" class="example-image">
+                        </div>
+
+                        <br><br>
+
+                        <!-- Imagen: Crear nuevo producto -->
+                        <span>Imagen Crear nuevo producto:</span>
+                        <br>
+                        <div class="accordion-image-Venta">
+                            <img src="img/Crear nuevo producto.png" alt="Imagen de ejemplo del módulo de inicio" class="example-image">
+                        </div>
+
                     </div>
                 </div>                
 
@@ -140,6 +157,14 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
                                 Aquí irá tu video demostrativo
                             </div>
+
+                        <!-- Imagen: Módulo Diseño -->
+                        <span>Imagen Módulo Diseño:</span>
+                        <br>
+                        <div class="accordion-image-Venta">
+                            <img src="img/A3_Diseño.png" alt="Imagen de ejemplo del módulo de inicio" class="example-image">
+                        </div>
+
                         </div>
                 </div>
 
@@ -164,6 +189,13 @@
                         <div class="video-placeholder-elegant">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
                             Aquí irá tu video demostrativo
+                        </div>
+
+                        <!-- Imagen: Módulo Exportar -->
+                        <span>Imagen Módulo Exportar:</span>
+                        <br>
+                        <div class="accordion-image-Venta">
+                            <img src="img/A4_Exportar.png" alt="Imagen de ejemplo del módulo de inicio" class="example-image">
                         </div>
                     </div>
                 </div>
@@ -199,6 +231,14 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
                                 Aquí irá tu video demostrativo
                             </div>
+
+                            <!-- Imagen: A5_Ajustes -->
+                            <span>Página Ajustes:</span>
+                            <br>
+                            <div class="accordion-image-Venta">
+                                <img src="img/A5_Ajustes.png" alt="Imagen de módulo de Ajustes" class="example-image">
+                            </div>
+
                         </ul>
                     </div>
                 </div>
@@ -227,6 +267,14 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
                             Aquí irá tu video demostrativo
                         </div>
+
+                        <!-- Imagen: Módulo Control de stock -->
+                        <span>Imagen Módulo Control de Stock:</span>
+                        <br>
+                        <div class="accordion-image-Venta">
+                            <img src="img/A7_Control de Stock.png" alt="Imagen de ejemplo del módulo de inicio" class="example-image">
+                        </div>
+
                     </div>
                 </div>                
 
@@ -253,6 +301,13 @@
                         <div class="video-placeholder-elegant">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
                             Aquí irá tu video demostrativo
+                        </div>
+
+                        <!-- Imagen: Módulo Finanzas -->
+                        <span>Imagen Módulo Finanzas:</span>
+                        <br>
+                        <div class="accordion-image-Venta">
+                            <img src="img/A6_Finanzas.png" alt="Imagen de ejemplo del módulo de inicio" class="example-image">
                         </div>
                     </div>
                 </div>
@@ -319,42 +374,39 @@
     <script src="script.js"></script>
 
     <script>
-    // Esperamos a que todo el contenido cargue
     document.addEventListener('DOMContentLoaded', () => {
-        // Seleccionamos la imagen original usando querySelector
-        const imagenVenta = document.querySelector('.example-image');
+        // 1. Usamos querySelectorAll para seleccionar TODAS las imágenes con la clase
+        const imagenesVenta = document.querySelectorAll('.example-image');
         
-        // Creamos el contenedor oscuro que ocupará toda la pantalla dinámicamente[cite: 6]
+        // Creamos el contenedor oscuro (lightbox) una sola vez
         const lightbox = document.createElement('div');
         lightbox.classList.add('lightbox-pantalla');
         
-        // Creamos la etiqueta de imagen que irá dentro del lightbox[cite: 6]
         const imgZoom = document.createElement('img');
         imgZoom.classList.add('lightbox-image');
         
-        // Insertamos la imagen en el lightbox y el lightbox al body[cite: 6]
         lightbox.appendChild(imgZoom);
         document.body.appendChild(lightbox);
 
-        // 1. EVENTO: Al tocar la imagen pequeña (para abrir el zoom)[cite: 2]
-        imagenVenta.addEventListener('click', function() {
-            // Le pasamos la ruta de tu imagen original (Captura de pantalla 2026-08-28 211510.png)
-            imgZoom.src = this.src;
-            
-            // Calculamos el 50% de su tamaño/resolución original real
-            const tamañoOriginal = this.naturalWidth;
-            const tamañoDeseado = tamañoOriginal * 0.5;
-            
-            // Le asignamos ese 50% exacto a la imagen ampliada
-            imgZoom.style.width = tamañoDeseado + 'px';
-            
-            // Mostramos el lightbox agregando la clase "activo"[cite: 5]
-            lightbox.classList.add('activo');
+        // 2. Usamos forEach para recorrer cada imagen encontrada y asignarle el evento de clic[cite: 2]
+        imagenesVenta.forEach(imagen => {
+            imagen.addEventListener('click', function() {
+                // Al hacer clic, le asignamos al lightbox el origen (src) exacto de la imagen que tocaste[cite: 2]
+                imgZoom.src = this.src;
+                
+                // Calculamos el 50% de su resolución original real
+                const tamañoOriginal = this.naturalWidth;
+                const tamañoDeseado = tamañoOriginal * 0.5;
+                
+                imgZoom.style.width = tamañoDeseado + 'px';
+                
+                // Mostramos el lightbox agregando la clase "activo"
+                lightbox.classList.add('activo');
+            });
         });
 
-        // 2. EVENTO: Al tocar la imagen ampliada (para cerrarla)[cite: 2]
+        // 3. EVENTO: Al tocar la imagen ampliada (para cerrarla)
         imgZoom.addEventListener('click', function() {
-            // Oculta el lightbox quitando la clase[cite: 5]
             lightbox.classList.remove('activo'); 
         });
     });
