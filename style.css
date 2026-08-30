@@ -233,22 +233,38 @@ body {
 
 /* Marcador para futuro video (Estilo Elegant V2) */
 .video-placeholder-elegant {
-    margin: 10px 16px 20px 34px; /* Alineado perfectamente con la viñeta del texto */
+    margin: 10px 16px 20px 34px;
     background: rgba(255, 255, 255, 0.02);
     border: 1px dashed var(--gold-muted);
-    height: 110px;
-    border-radius: 12px;
+    
+    /* --- CORRECCIONES CLAVE --- */
+    width: 85%; /* Ocupa el espacio disponible */
+    height: auto; /* Permite que el contenedor crezca junto con el video */
+    box-sizing: border-box; /* El borde y padding se calculan hacia adentro */
+    padding: 16px; /* Aire interior para separar el contenido del borde punteado */
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 12px; /* Separación entre el texto superior y el video */
+    
     color: var(--gold-muted);
     font-size: 13px;
     font-weight: 400;
     font-family: 'Playfair Display', serif;
     letter-spacing: 0.5px;
     transition: all 0.3s ease;
+    border-radius: 12px;
+}
+
+/* Forzar al video de YouTube a adaptarse a los bordes de la caja elegant */
+.video-placeholder-elegant iframe {
+    width: 100%; /* Obliga al video a respetar el máximo del contenedor[cite: 1] */
+    aspect-ratio: 16 / 9; /* Mantiene la relación de aspecto original de YouTube[cite: 1] */
+    height: 100%; /* La altura se calcula sola basándose en el aspect-ratio */
+    border: none;
+    border-radius: 8px; /* Un ligero redondeo para mantener la estética elegante */
 }
 
 /* Pequeño efecto al pasar el mouse por encima de la caja del video */
